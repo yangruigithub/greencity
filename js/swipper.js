@@ -1,0 +1,100 @@
+var aDots=document.getElementsByClassName('dots');
+
+
+
+for(i=0;i<aDots.length;i++)
+{
+	(function (i){
+				aDots[i].onclick=function () {
+					fnDots (i);
+				};
+	})(i);
+}
+//封装智障函数
+function fnDots (i){
+	if(i==0){
+		aDots[0].style.background='#fff';
+		aDots[4].style.background='none';
+		aDots[1].style.background='none';
+		aDots[2].style.background='none';
+		aDots[3].style.background='none';
+		aDots[5].style.background='none';
+		aDots[0].style.width='35px';
+		aDots[1].style.width='15px';
+		aDots[1].style.width='15px';
+		aDots[2].style.width='15px';
+		aDots[3].style.width='15px';
+		aDots[5].style.width='15px';
+	}
+	if(i==1){
+		aDots[1].style.background='#fff';
+		aDots[0].style.background='none';
+		aDots[4].style.background='none';
+		aDots[2].style.background='none';
+		aDots[3].style.background='none';
+		aDots[5].style.background='none';
+		aDots[1].style.width='35px';
+		aDots[0].style.width='15px';
+		aDots[4].style.width='15px';
+		aDots[2].style.width='15px';
+		aDots[3].style.width='15px';
+		aDots[5].style.width='15px';
+	}
+	if(i==2){
+		aDots[2].style.background='#fff';
+		aDots[0].style.background='none';
+		aDots[1].style.background='none';
+		aDots[4].style.background='none';
+		aDots[3].style.background='none';
+		aDots[5].style.background='none';
+		aDots[2].style.width='35px';
+		aDots[0].style.width='15px';
+		aDots[1].style.width='15px';
+		aDots[4].style.width='15px';
+		aDots[3].style.width='15px';
+		aDots[5].style.width='15px';
+	}
+	if(i==3){
+		aDots[3].style.background='#fff';
+		aDots[0].style.background='none';
+		aDots[1].style.background='none';
+		aDots[2].style.background='none';
+		aDots[4].style.background='none';
+		aDots[5].style.background='none';
+		aDots[3].style.width='35px';
+		aDots[0].style.width='15px';
+		aDots[1].style.width='15px';
+		aDots[2].style.width='15px';
+		aDots[4].style.width='15px';
+		aDots[5].style.width='15px';
+	}
+	if(i==4){
+		aDots[4].style.background='#fff';
+		aDots[0].style.background='none';
+		aDots[1].style.background='none';
+		aDots[2].style.background='none';
+		aDots[3].style.background='none';
+		aDots[5].style.background='none';
+		aDots[4].style.width='35px';
+		aDots[0].style.width='15px';
+		aDots[1].style.width='15px';
+		aDots[2].style.width='15px';
+		aDots[3].style.width='15px';
+		aDots[5].style.width='15px';
+	}
+	if(i==5){
+		aDots[5].style.background='#fff';
+		aDots[0].style.background='none';
+		aDots[1].style.background='none';
+		aDots[2].style.background='none';
+		aDots[3].style.background='none';
+		aDots[4].style.background='none';
+		aDots[5].style.width='35px';
+		aDots[0].style.width='15px';
+		aDots[1].style.width='15px';
+		aDots[2].style.width='15px';
+		aDots[3].style.width='15px';
+		aDots[4].style.width='15px';
+	}
+
+}
