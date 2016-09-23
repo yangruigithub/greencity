@@ -3,6 +3,14 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>社会我锐哥</title>
+		<script>
+			window.onload=function ()　{
+				var container=document.getElementById('container_wrapper');
+				container.style.height=document.getElementById('swipper_wrapper').offsetHeight;
+				alert(container.style.height);
+				
+			}
+		</script>
 	</head>
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
 	<body>
@@ -30,22 +38,18 @@
 		</div>
 		<div id="container_wrapper">
 			<div id="home_wrapper">
+				<div id="dot">
+						<div class="dots"></div>
+						<div class="dots"></div>
+						<div class="dots"></div>
+						<div class="dots"></div>
+						<div class="dots"></div>
+						<div class="dots"></div>
+					</div>
 				<div id="bg_wrapper">
 					<div id="swipper_wrapper">
 						<img src="img/banner_1.png"/>
-						<img src="img/banner_2.png"/>
-						<img src="img/banner_3.png"/>
-						<img src="img/banner_1.png"/>
-						<img src="img/banner_2.png"/>
-						<img src="img/banner_3.png"/>
-					</div>
-					<div id="dot">
-						<div class="dots"></div>
-						<div class="dots"></div>
-						<div class="dots"></div>
-						<div class="dots"></div>
-						<div class="dots"></div>
-						<div class="dots"></div>
+			
 					</div>
 				</div>
 			</div>
@@ -55,7 +59,21 @@
 			<div id="vip"></div>
 			<div id="money"></div>-->
 		</div>
-		<div id="footer"></div>
+		<div id="footer">
+			<div class="site_wrapper">
+				<div class="wechat_wrapper"><img src="img/icon_wechat.png"/>绿城微信</div>
+				<div class="weibo_wrapper"><img src="img/icon_weibo.png"/>绿城微博</div>
+				<div class="website_wrapper"><img src="img/icon_website.png"/>网站地图</div>
+				<div class="law_wrapper"><img src="img/icon_law.png"/>法律声明</div>
+				<div class="comment_wrapper"><img src="img/icon_comment.png"/>客户留言</div>
+			</div>
+			<div class="copyright">
+
+© 绿城中国控股有限公司 浙ICP备05064294号-1 浙公网安备33010602004015号
+全国客服热线：95059
+友情链接：蓝城集团 绿城发展 绿城服务 绿城电商 绿城设计GAD 大象设计GOA 绿城装饰 绿城教育绿城医院 绿城足球
+			</div>
+		</div>
 		
 	</body>
 	<script src="js/swipper.js"></script>
